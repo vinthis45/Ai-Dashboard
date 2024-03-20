@@ -1,0 +1,19 @@
+.sidebar-container {
+    display: flex;
+    height: 100vh;
+
+  }
+  
+  .sidebar-toggle {
+    cursor: pointer;
+    padding: 10px;
+  }
+  
+  .sidebar-toggle svg {
+    color: #333; 
+  }
+  
+  Link{
+    display: flex;
+    gap: 5px;
+  }
