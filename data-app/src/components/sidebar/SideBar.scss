@@ -4,6 +4,28 @@
 
   }
   
+  .sidebar-title {
+    display: flex;
+    align-items: center;
+    background:#003D52;
+    color: white;
+    padding: 12px;
+    margin-bottom: 35px;
+  }
+  
+  .sidebar-title-icon {
+    display: inline-block;
+    margin-left: 3px;
+    color: white;
+  }
+  
+  .sidebar-title-text {
+    display: inline-block;
+    margin-left: 8px; 
+    // padding: 30px;
+    // font-weight: bolder;
+  }
+
   .sidebar-toggle {
     cursor: pointer;
     padding: 10px;

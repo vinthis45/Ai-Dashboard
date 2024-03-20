@@ -4,14 +4,15 @@ import { useDispatch, useSelector } from 'react-redux';
 import { fetchData } from '../../features/dataSlice';
 import { RootState } from '../../features/store';
 import { Box, Drawer, List, ListItem, ListItemIcon, ListItemText, Toolbar, Typography } from '@mui/material';
-import { Home, BarChart, Person, Public, Schedule } from '@mui/icons-material';
+import { Home, BarChart, Person, Public, Schedule, Dashboard } from '@mui/icons-material';
 import { Dispatch } from 'redux';
+import './SideBar.scss'
 
 const drawerWidth = 240;
 
 const SideBarComp: React.FC = () => {
   const dispatch: Dispatch<any> = useDispatch();
-  const { loading, error, data } = useSelector((state: RootState) => state.data);
+  const { loading, error} = useSelector((state: RootState) => state.data);
 
   useEffect(() => {
     dispatch(fetchData());
@@ -29,6 +30,12 @@ const SideBarComp: React.FC = () => {
       >
         <Toolbar />
         <Box sx={{ overflow: 'auto' }}>
+          <div className='sidebar-title'>
+            <ListItemIcon className='sidebar-title-icon'>
+              <Dashboard fontSize="large" />
+            </ListItemIcon>
+            <span className='sidebar-title-text'>Ai-Data Hub</span>
+          </div>
           <List>
             <ListItem button component={Link} to="/">
               <ListItemIcon>
