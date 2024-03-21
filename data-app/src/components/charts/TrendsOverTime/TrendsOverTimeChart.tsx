@@ -43,7 +43,7 @@ const TrendsOverTimeChart: React.FC<Props> = ({ dailyData, weeklyData }) => {
       <div className="chart-description">
         <h2>Trends Over Time</h2>
         <p>
-          The dataset provides detailed information on average response times recorded on a daily and weekly basis. Delve into the day-wise records to track fluctuations in response times over specific dates, allowing you to identify trends and potential performance issues on individual days. Additionally, analyze response times on a weekly basis to understand broader trends and patterns in the AI service's responsiveness. Gain valuable insights into the overall performance of your AI service and utilize this data to optimize response times and enhance user satisfaction.
+          The line-graph provides detailed information on average response times recorded on a daily and weekly basis. Delve into the day-wise records to track fluctuations in response times over specific dates, allowing you to identify trends and potential performance issues on individual days. Additionally, analyze response times on a weekly basis to understand broader trends and patterns in the AI service's responsiveness. Gain valuable insights into the overall performance of your AI service and utilize this data to optimize response times and enhance user satisfaction.
         </p>
       </div>
     </div>
